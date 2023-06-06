@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:fontFamily="@font/regular"
+        android:layout_marginTop="200dp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:textColorHint="@color/gray"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_below="@id/title"
+        />
+
+    <EditText
+        android:id="@+id/edtPasswrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:textColorHint="@color/gray"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_below="@id/edtEmail"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/button"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edtPasswrd"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:hint="Login" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:hint="Sign In"
+        android:layout_below="@id/btnLogin"
+        android:gravity="center"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_centerHorizontal="true"
+        style="@style/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>
